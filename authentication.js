@@ -1,6 +1,11 @@
 const jwt=require('jsonwebtoken')
 const User=require('../models/user')
 
+//when the user logs in we save make ,
+// jwt token and save it in the localstorage,for every CRUD request
+//made in the client side we receive a authorization token from client side
+//which is set in headers after receiving it we verify it in the server side
+
 
 exports.authentication=(req,res,next)=>{
    try {
