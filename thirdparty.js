@@ -10,6 +10,6 @@ async function getnews(url) {
   }
 }
 
-// Example usage
+
 const apiurl = 'https://newsapi.org/v2/everything?q=tesla&from=2023-05-05&sortBy=publishedAt&apiKey=bc1d0497e9a34c7495085e474698c65d';
 getnews(apiurl);
